@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ICFSHL '20",
+    "venue": "Stockholm, Sweden",
+    "date": "July 16-17, 2020",
+    "image": "images/stockholm.jpg",
+    "conference_code": "20SE07ICFSHL",
+    "description": "International Conference on Family Studies and Human Life aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Family Studies and Human Life. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Family Studies and Human Life.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICFHD '20",
+    "venue": "Paris, France",
+    "date": "July 20-21, 2020",
+    "image": "images/paris.jpg",
+    "conference_code": "20FR07ICFHD",
+    "description": "International Conference on Family and Human Development aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Family and Human Development. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Family and Human Development.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICSCGDS '20",
+    "venue": "Rome, Italy",
+    "date": "July 23-24, 2020",
+    "image": "images/rome.jpg",
+    "conference_code": "20IT07ICSCGDS",
+    "description": "International Conference on Social Change and Global Demographic Shifts aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Social Change and Global Demographic Shifts. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Social Change and Global Demographic Shifts.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICFSHD '20",
+    "venue": "Vancouver, Canada",
+    "date": "August 06-07, 2020",
+    "image": "images/vancouver.jpg",
+    "conference_code": "20CA08ICFSHD",
+    "description": "International Conference on Family Studies and Human Development aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Family Studies and Human Development. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Family Studies and Human Development.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICFHL '20",
+    "venue": "Venice, Italy",
+    "date": "August 13-14, 2020",
+    "image": "images/venice.jpg",
+    "conference_code": "August 13-14, 2020",
+    "description": "International Conference on Family and Human Life aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Family and Human Life. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Family and Human Life.",
+    "registration": "€250 - €450"
+  },
+  {
+    "name": "ICNSC '20",
+    "venue": "Lagos, Nigeria",
+    "date": "August 13-14, 2020",
+    "image": "images/lagos.jpg",
+    "conference_code": "20NG08ICNSC",
+    "description": "International Conference on Nature of Social Change aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Nature of Social Change. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Nature of Social Change.",
+    "registration": "€250 - €350"
+  },
+  {
+    "name": "ICFS '20",
+    "venue": "Barcelona, Spain",
+    "date": "August 17-18, 2020",
+    "image": "images/barcelona.jpg",
+    "conference_code": "20ES08ICFS",
+    "description": "International Conference on Family and Society aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Family and Society. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Family and Society.",
+    "registration": "€250 - €450"
+  },
+  {
+    "name": "ICHET '20",
+    "venue": "Bangkok, Thailand",
+    "date": "August 20-21, 2020",
+    "image": "images/bangkok.jpg",
+    "conference_code": "20TH08ICHET",
+    "description": "International Conference on Home Economics and Technology aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Home Economics and Technology. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Home Economics and Technology.",
+    "registration": "€250 - €350"
+  },
+  {
+    "name": "ICSCESP '20",
+    "venue": "Sydney, Australia",
+    "date": "August 27-28, 2020",
+    "image": "images/sydney.jpg",
+    "conference_code": "20AU08ICSCESP",
+    "description": "International Conference on Social Change, Evolution and Social Processes aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Social Change, Evolution and Social Processes. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Social Change, Evolution and Social Processes.",
+    "registration": "€250 - €450"
+  },
+  {
+    "name": "ICACSS '20",
+    "venue": "Tokyo, Japan",
+    "date": "September 10-11, 2020",
+    "image": "images/tokyo.jpg",
+    "conference_code": "20JP09ICACSS",
+    "description": "International Conference on Anthropological, Cultural and Sociological Studies aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Anthropological, Cultural and Sociological Studies. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Anthropological, Cultural and Sociological Studies.",
+    "registration": "€250 - €450"
+  }
+]

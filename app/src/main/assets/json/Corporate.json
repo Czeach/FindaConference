@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ICBFRB '20",
+    "venue": "Copenhagen, Denmark",
+    "date": "July 15-16, 2020",
+    "image": "images/copenhagen.jpg",
+    "conference_code": "20DK07ICBFRB",
+    "description": "International Conference on Behavioral Finance and Risk Behavior aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Behavioral Finance and Risk Behavior. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Behavioral Finance and Risk Behavior.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICBFFCD '20",
+    "venue": "Bali, Indonesia",
+    "date": "July 16-17, 2020",
+    "image": "images/bali.jpg",
+    "conference_code": "20ID07ICBFFCD",
+    "description": "International Conference on Behavioral Finance, Financial Choices and Decisions aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Behavioral Finance, Financial Choices and Decisions. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Behavioral Finance, Financial Choices and Decisions.",
+    "registration": "€300 - €400"
+  },
+  {
+    "name": "ICCFIPV '20",
+    "venue": "Helsinki, Finland",
+    "date": "July 17-18, 2020",
+    "image": "images/helsinki.jpg",
+    "conference_code": "20FI07ICCFIPV",
+    "description": "International Conference on Corporate Finance, Investment and Project Valuation aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Corporate Finance, Investment and Project Valuation. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Corporate Finance, Investment and Project Valuation.",
+    "registration": "€300 - €400"
+  },
+  {
+    "name": "ICAFS '20",
+    "venue": "Rome, Italy",
+    "date": "July 23-24, 2020",
+    "image": "images/rome.jpg",
+    "conference_code": "20IT07ICAFS",
+    "description": "International Conference on Applied Financial Studies aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Applied Financial Studies. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Applied Financial Studies.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICSPRA '20",
+    "venue": "London, United Kingdom",
+    "date": "July 23-24, 2020",
+    "image": "images/london.jpg",
+    "conference_code": "20UK07ICSPRA",
+    "description": "International Conference on Structured Products and Risk Analysis aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Structured Products and Risk Analysis. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Structured Products and Risk Analysis.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICFST '20",
+    "venue": "Zurich, Switzerland",
+    "date": "July 27-28, 2020",
+    "image": "images/zurich.jpg",
+    "conference_code": "20CH07ICFST",
+    "description": "International Conference on Financial Studies and Trade aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Financial Studies and Trade. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Financial Studies and Trade.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICSPD '20",
+    "venue": "Istanbul, Turkey",
+    "date": "July 30-31, 2020",
+    "image": "images/istanbul.jpg",
+    "conference_code": "20TR07ICSPD",
+    "description": "International Conference on Structured Products and Derivatives aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Structured Products and Derivatives. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Structured Products and Derivatives.",
+    "registration": "€300 - €400"
+  },
+  {
+    "name": "ICSF '20",
+    "venue": "Montreal, Canada",
+    "date": "August 04-05, 2020",
+    "image": "images/montreal.jpg",
+    "conference_code": "20CA08ICSF",
+    "description": "International Conference on Structured Finance aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Structured Finance. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Structured Finance.",
+    "registration": "€300 - €500"
+  },
+  {
+    "name": "ICBFHE '20",
+    "venue": "Lagos, Nigeria",
+    "date": "August 13-14, 2020",
+    "image": "images/lagos.jpg",
+    "conference_code": "20NG08ICBFHE",
+    "description": "International Conference on Behavioral Finance and Human Emotions aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Behavioral Finance and Human Emotions. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Behavioral Finance and Human Emotions.",
+    "registration": "€250 - €350"
+  },
+  {
+    "name": "ICBCM '20",
+    "venue": "Barcelona, Spain",
+    "date": "August 17-18, 2020",
+    "image": "images/barcelona.jpg",
+    "conference_code": "20ES08ICBCM",
+    "description": "International Conference on Business and Communications Management aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Business and Communications Management. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Business and Communications Management.",
+    "registration": "€250 - €450"
+  }
+]
