@@ -1,5 +1,9 @@
 package com.example.findaconference.models
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class BankingItem(
     val conference_code: String,
     val date: String,
@@ -8,4 +12,4 @@ data class BankingItem(
     val name: String,
     val registration: String,
     val venue: String
-)
+): Parcelable

@@ -7,13 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.findaconference.adapters.BankingAdapter
-import com.example.findaconference.adapters.CorporateAdapter
-import com.example.findaconference.adapters.FamilyAdapter
-import com.example.findaconference.adapters.LitigationAdapter
+import com.example.findaconference.adapters.*
 import com.example.findaconference.databinding.MainFragmentBinding
 import com.example.findaconference.models.BankingItem
 import com.example.findaconference.models.CorporateItem
@@ -34,21 +31,57 @@ class MainFragment : Fragment() {
 
     private lateinit var binding: MainFragmentBinding
 
+    private val  bankingClickListener by lazy {
+        object : bankingItemClickListener {
+            override fun invoke(it: BankingItem) {
+                val  arg = MainFragmentDirections.actionMainFragmentToBankingDetailsFragment(it)
+                findNavController().navigate(arg)
+            }
+
+        }
+    }
     private lateinit var bankingRecycler: RecyclerView
     private val bankingListItem: MutableList<BankingItem> = ArrayList()
-    private val bankingAdapter = BankingAdapter(bankingListItem)
+    private val bankingAdapter = BankingAdapter(bankingListItem, bankingClickListener)
 
+    private val litigationClickListener by lazy {
+        object : litigationItemClickListener {
+            override fun invoke(it: LitigationItem) {
+                val arg = MainFragmentDirections.actionMainFragmentToDetailFragment(it)
+                findNavController().navigate(arg)
+            }
+
+        }
+    }
     private lateinit var litigationRecycler: RecyclerView
     private val litigationListItem: MutableList<LitigationItem> = ArrayList()
-    private val litigationAdapter = LitigationAdapter(litigationListItem)
+    private val litigationAdapter = LitigationAdapter(litigationListItem, litigationClickListener)
 
+    private val corporateClickListener by lazy {
+        object : corporateItemClickListener {
+            override fun invoke(it: CorporateItem) {
+                val arg = MainFragmentDirections.actionMainFragmentToCorporateDetailsFragment(it)
+                findNavController().navigate(arg)
+            }
+
+        }
+    }
     private lateinit var corporateRecycler: RecyclerView
     private val corporateListItem: MutableList<CorporateItem> = ArrayList()
-    private val corporateAdapter = CorporateAdapter(corporateListItem)
+    private val corporateAdapter = CorporateAdapter(corporateListItem, corporateClickListener)
 
+    private val familyClickListener by lazy {
+        object : familyItemClickListener {
+            override fun invoke(it: FamilyItem) {
+                val arg = MainFragmentDirections.actionMainFragmentToFamilyDetailsFragment(it)
+                findNavController().navigate(arg)
+            }
+
+        }
+    }
     private lateinit var familyRecycler: RecyclerView
     private val familyListItem: MutableList<FamilyItem> = ArrayList()
-    private val familyAdapter = FamilyAdapter(familyListItem)
+    private val familyAdapter = FamilyAdapter(familyListItem, familyClickListener)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

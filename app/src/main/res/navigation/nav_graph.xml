@@ -10,5 +10,63 @@
         android:id="@+id/mainFragment"
         android:name="com.example.findaconference.fragments.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/litigationDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_bankingDetailsFragment"
+            app:destination="@id/bankingDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_corporateDetailsFragment"
+            app:destination="@id/corporateDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_familyDetailsFragment"
+            app:destination="@id/familyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/litigationDetailsFragment"
+        android:name="com.example.findaconference.fragments.LitigationDetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_litigation_detail" >
+        <argument
+            android:name="LitigationArgs"
+            app:argType="com.example.findaconference.models.LitigationItem" />
+<!--        <argument-->
+<!--            android:name="banking"-->
+<!--            app:argType="com.example.findaconference.models.BankingItem" />-->
+<!--        <argument-->
+<!--            android:name="corporate"-->
+<!--            app:argType="com.example.findaconference.models.CorporateItem" />-->
+<!--        <argument-->
+<!--            android:name="family"-->
+<!--            app:argType="com.example.findaconference.models.FamilyItem" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/bankingDetailsFragment"
+        android:name="com.example.findaconference.fragments.BankingDetailsFragment"
+        android:label="BankingDetailsFragment"
+        tools:layout="@layout/fragment_banking_details">
+        <argument
+            android:name="BankingArgs"
+            app:argType="com.example.findaconference.models.BankingItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/corporateDetailsFragment"
+        android:name="com.example.findaconference.fragments.CorporateDetailsFragment"
+        android:label="CorporateDetailsFragment"
+        tools:layout="@layout/fragment_corporate_details">
+        <argument
+            android:name="CorporateArgs"
+            app:argType="com.example.findaconference.models.CorporateItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/familyDetailsFragment"
+        android:name="com.example.findaconference.fragments.FamilyDetailsFragment"
+        android:label="FamilyDetailsFragment"
+        tools:layout="@layout/fragment_family_details">
+        <argument
+            android:name="FamilyArgs"
+            app:argType="com.example.findaconference.models.FamilyItem" />
+    </fragment>
 </navigation>

@@ -13,7 +13,9 @@ import com.example.findaconference.models.LitigationItem
 import kotlinx.android.synthetic.main.list_item.view.*
 import kotlin.random.Random
 
-class LitigationAdapter(private var list: List<LitigationItem>):
+typealias litigationItemClickListener = (LitigationItem) -> Unit
+
+class LitigationAdapter(private var list: List<LitigationItem>, private val clickListener: litigationItemClickListener):
     RecyclerView.Adapter<LitigationAdapter.LitigationViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LitigationViewHolder {
@@ -26,28 +28,41 @@ class LitigationAdapter(private var list: List<LitigationItem>):
         holder.bind(list[position])
     }
 
-    inner class LitigationViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class LitigationViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
 
         private val random = Random
 
-        private var poster: ImageView = itemView.poster
-        private var title: TextView = itemView.name_text
-        private var venue: TextView = itemView.venue_text
-        private var regFee: TextView = itemView.reg_fee
+        private var poster: ImageView? = null
+        private var title: TextView? = null
+        private var venue: TextView? = null
+        private var regFee: TextView? = null
+
+        init {
+            poster = itemView.poster
+            title = itemView.name_text
+            venue = itemView.venue_text
+            regFee = itemView.reg_fee
+            itemView.setOnClickListener(this)
+        }
 
         fun bind(litigationItem: LitigationItem) {
 
-            title.text = litigationItem.name
-            venue.text = litigationItem.venue
-            regFee.text = litigationItem.registration
+            title?.text = litigationItem.name
+            venue?.text = litigationItem.venue
+            regFee?.text = litigationItem.registration
 
-            poster.layoutParams.height = getRandomIntInRange()
+            poster?.layoutParams?.height = getRandomIntInRange()
             val getImage = itemView.context.assets.open(litigationItem.image)
-            poster.setImageDrawable(Drawable.createFromStream(getImage, null))
+            poster?.setImageDrawable(Drawable.createFromStream(getImage, null))
         }
 
         private fun getRandomIntInRange(min: Int = 320, max: Int = 380): Int {
             return random.nextInt(max - min + min).plus(min)
+        }
+
+        override fun onClick(v: View?) {
+            val litigation = list[adapterPosition]
+            clickListener.invoke(litigation)
         }
     }
 }
