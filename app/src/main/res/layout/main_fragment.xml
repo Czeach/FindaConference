@@ -29,7 +29,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground">
 
                 <TextView
                     android:id="@+id/textView"
@@ -104,7 +105,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -143,7 +145,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -181,7 +184,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground">
 
                     <ImageView
                         android:layout_width="39dp"
@@ -219,7 +223,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground">
 
                     <ImageView
                         android:layout_width="39dp"
