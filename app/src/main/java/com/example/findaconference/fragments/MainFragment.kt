@@ -32,7 +32,6 @@ import java.util.ArrayList
 
 class MainFragment : Fragment() {
 
-    private lateinit var viewModel: MainViewModel
     private lateinit var binding: MainFragmentBinding
 
     private lateinit var bankingRecycler: RecyclerView
@@ -56,8 +55,6 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = MainFragmentBinding.inflate(inflater)
-
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding.litigationBlock.visibility = View.VISIBLE
         onClick()
