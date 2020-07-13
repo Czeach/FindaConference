@@ -12,7 +12,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.room.Room
+import com.example.findaconference.R
 import com.example.findaconference.adapters.*
+import com.example.findaconference.database.FavouritesDatabase
 import com.example.findaconference.databinding.MainFragmentBinding
 import com.example.findaconference.models.BankingItem
 import com.example.findaconference.models.CorporateItem
@@ -36,6 +39,7 @@ import java.util.*
 class MainFragment : Fragment() {
 
     private lateinit var binding: MainFragmentBinding
+    private lateinit var favouritesDatabase: FavouritesDatabase
 
     private val  bankingClickListener by lazy {
         object : bankingItemClickListener {
@@ -134,8 +138,13 @@ class MainFragment : Fragment() {
         }
         addFamilyItemsFromJson()
 
+        binding.toFavourite.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_favouritesFragment)
+        }
+
         return binding.root
     }
+
 
     private fun onClick() {
         binding.litigationCardView.setOnClickListener {
@@ -166,6 +175,9 @@ class MainFragment : Fragment() {
             family_block.visibility = View.VISIBLE
         }
     }
+//
+//    favoriteDatabase= Room.databaseBuilder(getApplicationContext(),FavoriteDatabase.class,"myfavdb").allowMainThreadQueries().build();
+
 
     @Throws(IOException::class)
     private fun readBankingDataFromFile(): String {
