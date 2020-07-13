@@ -8,10 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.BankingItem
 import com.example.findaconference.models.CorporateItem
-import com.example.findaconference.models.LitigationItem
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
 typealias corporateItemClickListener = (CorporateItem) -> Unit
@@ -20,7 +18,7 @@ class CorporateAdapter(private var list: List<CorporateItem>, private val clickL
     RecyclerView.Adapter<CorporateAdapter.CorporateViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CorporateViewHolder {
-        return CorporateViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false))
+        return CorporateViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.corporate_list_item, parent, false))
     }
 
     override fun getItemCount(): Int = list.size

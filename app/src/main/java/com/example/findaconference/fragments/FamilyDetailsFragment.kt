@@ -1,5 +1,6 @@
 package com.example.findaconference.fragments
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +15,7 @@ class FamilyDetailsFragment : Fragment() {
 
     private lateinit var binding: FragmentFamilyDetailsBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,7 +26,7 @@ class FamilyDetailsFragment : Fragment() {
         val family = FamilyDetailsFragmentArgs.fromBundle(requireArguments()).FamilyArgs
 
         binding.confName.text = family.name
-        binding.confCode.text = family.conference_code
+        binding.confCode.text = "Conference Code: ${family.conference_code}"
         binding.confDate.text = family.date
         binding.confVenue.text = family.venue
         binding.confDesc.text = family.description

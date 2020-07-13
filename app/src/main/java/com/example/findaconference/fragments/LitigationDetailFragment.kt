@@ -1,5 +1,6 @@
 package com.example.findaconference.fragments
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,6 +16,7 @@ class LitigationDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentLitigationDetailBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,7 +27,7 @@ class LitigationDetailFragment : Fragment() {
         val litigation = LitigationDetailFragmentArgs.fromBundle(requireArguments()).LitigationArgs
 
         binding.confName.text = litigation.name
-        binding.confCode.text = litigation.conference_code
+        binding.confCode.text = "Conference Code: ${litigation.conference_code}"
         binding.confDate.text = litigation.date
         binding.confVenue.text = litigation.venue
         binding.confDesc.text = litigation.description

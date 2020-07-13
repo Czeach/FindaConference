@@ -8,9 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.CorporateItem
 import com.example.findaconference.models.FamilyItem
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
 typealias familyItemClickListener = (FamilyItem) -> Unit
@@ -19,7 +18,7 @@ class FamilyAdapter(private var list: List<FamilyItem>, private val clickListene
     RecyclerView.Adapter<FamilyAdapter.FamilyViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FamilyViewHolder {
-        return FamilyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false))
+        return FamilyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.family_list_item, parent, false))
     }
 
     override fun getItemCount(): Int = list.size

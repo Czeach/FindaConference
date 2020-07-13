@@ -1,5 +1,6 @@
 package com.example.findaconference.fragments
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +15,7 @@ class BankingDetailsFragment : Fragment() {
 
     private lateinit var binding: FragmentBankingDetailsBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,7 +26,7 @@ class BankingDetailsFragment : Fragment() {
         val banking = BankingDetailsFragmentArgs.fromBundle(requireArguments()).BankingArgs
 
         binding.confName.text = banking.name
-        binding.confCode.text = banking.conference_code
+        binding.confCode.text = "Conference Code: ${banking.conference_code}"
         binding.confDate.text = banking.date
         binding.confVenue.text = banking.venue
         binding.confDesc.text = banking.description

@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_mainFragment_to_familyDetailsFragment"
             app:destination="@id/familyDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment" />
     </fragment>
     <fragment
         android:id="@+id/litigationDetailsFragment"
@@ -69,4 +72,9 @@
             android:name="FamilyArgs"
             app:argType="com.example.findaconference.models.FamilyItem" />
     </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.findaconference.fragments.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" />
 </navigation>

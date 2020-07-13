@@ -9,8 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
 import com.example.findaconference.models.BankingItem
-import com.example.findaconference.models.LitigationItem
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
 typealias bankingItemClickListener = (BankingItem) -> Unit
@@ -19,7 +18,7 @@ class BankingAdapter(private var list: List<BankingItem>, private val clickListe
     RecyclerView.Adapter<BankingAdapter.BankingViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BankingViewHolder {
-        return BankingViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false))
+        return BankingViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.banking_list_item, parent, false))
     }
 
     override fun getItemCount(): Int = list.size

@@ -8,9 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.BankingItem
+import com.example.findaconference.fragments.MainFragmentDirections
 import com.example.findaconference.models.LitigationItem
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
 typealias litigationItemClickListener = (LitigationItem) -> Unit
@@ -19,7 +19,7 @@ class LitigationAdapter(private var list: List<LitigationItem>, private val clic
     RecyclerView.Adapter<LitigationAdapter.LitigationViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LitigationViewHolder {
-        return LitigationViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false))
+        return LitigationViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.litigation_list_item, parent, false))
     }
 
     override fun getItemCount(): Int = list.size
@@ -36,12 +36,16 @@ class LitigationAdapter(private var list: List<LitigationItem>, private val clic
         private var title: TextView? = null
         private var venue: TextView? = null
         private var regFee: TextView? = null
+        private var liked: ImageView? = null
+        private var unLiked:ImageView? = null
 
         init {
             poster = itemView.poster
             title = itemView.name_text
             venue = itemView.venue_text
             regFee = itemView.reg_fee
+            liked = itemView.liked
+            unLiked = itemView.un_liked
             itemView.setOnClickListener(this)
         }
 
@@ -54,6 +58,14 @@ class LitigationAdapter(private var list: List<LitigationItem>, private val clic
             poster?.layoutParams?.height = getRandomIntInRange()
             val getImage = itemView.context.assets.open(litigationItem.image)
             poster?.setImageDrawable(Drawable.createFromStream(getImage, null))
+
+            unLiked?.setOnClickListener {
+                unLiked?.visibility = View.GONE
+                liked?.visibility = View.VISIBLE
+
+                val arg = MainFragmentDirections.actionMainFragmentToFavouritesFragment()
+
+            }
         }
 
         private fun getRandomIntInRange(min: Int = 320, max: Int = 380): Int {
