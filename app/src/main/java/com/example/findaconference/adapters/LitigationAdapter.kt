@@ -1,5 +1,6 @@
 package com.example.findaconference.adapters
 
+import android.content.Context
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
@@ -8,17 +9,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.database.Favourites
-import com.example.findaconference.database.FavouritesDatabase
-import com.example.findaconference.fragments.MainFragment
-import com.example.findaconference.models.LitigationItem
+import com.example.findaconference.models.ConferenceItem
 import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
-typealias litigationItemClickListener = (LitigationItem) -> Unit
+typealias litigationItemClickListener = (ConferenceItem) -> Unit
+typealias favouriteClickListener = (ConferenceItem) -> Unit
 
-class LitigationAdapter(private var list: List<LitigationItem>, private val clickListener: litigationItemClickListener):
+class LitigationAdapter(private var list: List<ConferenceItem>, private val clickListener: litigationItemClickListener):
     RecyclerView.Adapter<LitigationAdapter.LitigationViewHolder>(){
+
+    private val context: Context? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LitigationViewHolder {
         return LitigationViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.litigation_list_item, parent, false))
@@ -49,7 +50,7 @@ class LitigationAdapter(private var list: List<LitigationItem>, private val clic
             itemView.setOnClickListener(this)
         }
 
-        fun bind(litigationItem: LitigationItem) {
+        fun bind(litigationItem: ConferenceItem) {
 
             title?.text = litigationItem.name
             venue?.text = litigationItem.venue
@@ -59,23 +60,8 @@ class LitigationAdapter(private var list: List<LitigationItem>, private val clic
             val getImage = itemView.context.assets.open(litigationItem.image)
             poster?.setImageDrawable(Drawable.createFromStream(getImage, null))
 
-            fav?.setOnClickListener {
 
-                val favourites: Favourites? = null
-                val favouritesDatabase: FavouritesDatabase? = null
 
-                if (favouritesDatabase?.favouriteDao()?.isFavorite(1) != 1) {
-                    fav?.setImageResource(R.drawable.like_red)
-                } else {
-                    fav?.setImageResource(R.drawable.like_white)
-                    favouritesDatabase.favouriteDao().delete(favourites!!)
-                }
-            }
-
-//            if (MainActivity.favoriteDatabase.favoriteDao().isFavorite(productList.getId())==1)
-//                viewHolder.fav_btn.setImageResource(R.drawable.ic_favorite);
-//            else
-//                viewHolder.fav_btn.setImageResource(R.drawable.ic_favorite_border_black_24dp);
         }
 
         private fun getRandomIntInRange(min: Int = 320, max: Int = 380): Int {

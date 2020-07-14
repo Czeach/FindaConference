@@ -8,13 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.CorporateItem
+import com.example.findaconference.models.ConferenceItem
 import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
-typealias corporateItemClickListener = (CorporateItem) -> Unit
+typealias corporateItemClickListener = (ConferenceItem) -> Unit
 
-class CorporateAdapter(private var list: List<CorporateItem>, private val clickListener: corporateItemClickListener):
+class CorporateAdapter(private var list: List<ConferenceItem>, private val clickListener: corporateItemClickListener):
     RecyclerView.Adapter<CorporateAdapter.CorporateViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CorporateViewHolder {
@@ -44,7 +44,7 @@ class CorporateAdapter(private var list: List<CorporateItem>, private val clickL
             itemView.setOnClickListener(this)
         }
 
-        fun bind(corporateItem: CorporateItem) {
+        fun bind(corporateItem: ConferenceItem) {
 
             title?.text = corporateItem.name
             venue?.text = corporateItem.venue

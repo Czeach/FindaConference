@@ -8,13 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.FamilyItem
+import com.example.findaconference.models.ConferenceItem
 import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
-typealias familyItemClickListener = (FamilyItem) -> Unit
+typealias familyItemClickListener = (ConferenceItem) -> Unit
 
-class FamilyAdapter(private var list: List<FamilyItem>, private val clickListener: familyItemClickListener):
+class FamilyAdapter(private var list: List<ConferenceItem>, private val clickListener: familyItemClickListener):
     RecyclerView.Adapter<FamilyAdapter.FamilyViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FamilyViewHolder {
@@ -44,7 +44,7 @@ class FamilyAdapter(private var list: List<FamilyItem>, private val clickListene
             itemView.setOnClickListener(this)
         }
 
-        fun bind(familyItem: FamilyItem) {
+        fun bind(familyItem: ConferenceItem) {
 
             title?.text = familyItem.name
             venue?.text = familyItem.venue

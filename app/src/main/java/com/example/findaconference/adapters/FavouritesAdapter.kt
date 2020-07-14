@@ -16,6 +16,8 @@ class FavouritesAdapter internal constructor(
     context: Context
 ): RecyclerView.Adapter<FavouritesAdapter.FavouritesViewHolder>(){
 
+    private val context: Context? = null
+
     private val inflater: LayoutInflater = LayoutInflater.from(context)
     private var favourites = emptyList<Favourites>()
 
@@ -28,7 +30,12 @@ class FavouritesAdapter internal constructor(
 
     override fun onBindViewHolder(holder: FavouritesViewHolder, position: Int) {
         val current = favourites[position]
-        holder.bind(current)
+
+        holder.title?.text = current.name
+        holder.venue?.text = current.venue
+
+        val getImage = context?.assets?.open(current.image)
+        holder.image?.setImageDrawable(Drawable.createFromStream(getImage, null))
     }
 
     internal fun setFavourites(favourites: List<Favourites>) {
@@ -38,22 +45,8 @@ class FavouritesAdapter internal constructor(
 
     inner class FavouritesViewHolder(view:View): RecyclerView.ViewHolder(view) {
 
-        private var image: ImageView? = null
-        private var title: TextView? = null
-        private var venue: TextView? = null
-
-        init {
-            image = itemView.image
-            title = itemView.name_text
-            venue = itemView.venue_text
-        }
-
-        fun bind(favourites: Favourites) {
-
-            val getImage = itemView.context?.assets?.open(favourites.image)
-            image?.setImageDrawable(Drawable.createFromStream(getImage, null))
-            title?.text = favourites.name
-            venue?.text = favourites.venue
-        }
+        var image: ImageView? = null
+        var title: TextView? = null
+        var venue: TextView? = null
     }
 }

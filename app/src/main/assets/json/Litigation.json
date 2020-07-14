@@ -4,6 +4,7 @@
     "venue": "Ottawa, Canada",
     "date": "July 13-14, 2020",
     "image": "images/ottawa.jpg",
+    "isFavourite": false,
     "conference_code": "20CA07ICHSIAS",
     "description": "International Conference on Humanities, Social, Information and Administrative Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Information and Administrative Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Information and Administrative Sciences.",
     "registration": "€300 - €500"
@@ -13,6 +14,7 @@
     "venue": "Stockholm, Sweden",
     "date": "July 16-17, 2020",
     "image": "images/stockholm.jpg",
+    "isFavourite": false,
     "conference_code": "20SE07ICCWPP",
     "description": "International Conference on Communist and Workers aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Communist and Workers. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Communist and Workers.",
     "registration": "€300 - €500"
@@ -22,6 +24,7 @@
     "venue": "Paris, France",
     "date": "July 20-21, 2020",
     "image": "images/paris.jpg",
+    "isFavourite": false,
     "conference_code": "20FR07ICISCS",
     "description": "International Conference on Interdisciplinary Social and Cultural Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Interdisciplinary Social and Cultural Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Interdisciplinary Social and Cultural Sciences.",
     "registration": "€300 - €500"
@@ -31,6 +34,7 @@
     "venue": "Rome, Italy",
     "date": "July 23-24, 2020",
     "image": "images/rome.jpg",
+    "isFavourite": false,
     "conference_code": "20IT07ICCSC",
     "description": "International Conference on Communism, Socialism and Capitalism aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Communism, Socialism and Capitalism. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Communism, Socialism and Capitalism.",
     "registration": "€300 - €500"
@@ -40,6 +44,7 @@
     "venue": "Montreal, Canada",
     "date": "August 04-05, 2020",
     "image": "images/montreal.jpg",
+    "isFavourite": false,
     "conference_code": "20CA08ICHSBDS",
     "description": "International Conference on Humanities, Social, Business and Decision Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Business and Decision Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Business and Decision Sciences.",
     "registration": "€300 - €500"
@@ -49,6 +54,7 @@
     "venue": "Vancouver, Canada",
     "date": "August 06-07, 2020",
     "image": "images/vancouver.jpg",
+    "isFavourite": false,
     "conference_code": "20CA08ICHHSS",
     "description": "International Conference on Humanities, Human and Social Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Human and Social Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Human and Social Sciences.",
     "registration": "€300 - €500"
@@ -58,6 +64,7 @@
     "venue": "Istanbul, Turkey",
     "date": "August 17-18, 2020",
     "image": "images/istanbul.jpg",
+    "isFavourite": false,
     "conference_code": "20TR08ICHSMDS",
     "description": "International Conference on Humanities, Social, Management and Decision Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Management and Decision Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Management and Decision Sciences.",
     "registration": "€250 - €350"
@@ -67,6 +74,7 @@
     "venue": "Lisbon, Portugal",
     "date": "September 16-17, 2020",
     "image": "images/lisbon.jpg",
+    "isFavourite": false,
     "conference_code": "20PT09ICHSBES",
     "description": "International Conference on Humanities, Social, Behavioral and Economic Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Behavioral and Economic Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Behavioral and Economic Sciences.",
     "registration": "€250 - €450"
@@ -76,6 +84,7 @@
     "venue": "Dubrovnik, Croatia",
     "date": "October 01-02, 2020",
     "image": "images/dubrovnik.jpg",
+    "isFavourite": false,
     "conference_code": "20HR10ICHSBAS",
     "description": "International Conference on Humanities, Social, Business and Administrative Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Business and Administrative Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Business and Administrative Sciences.",
     "registration": "€250 - €350"
@@ -85,6 +94,7 @@
     "venue": "London, United Kingdom",
     "date": "October 22-23, 2020",
     "image": "images/london.jpg",
+    "isFavourite": false,
     "conference_code": "20UK10ICHSMBS",
     "description": "International Conference on Humanities, Social, Management and Business Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Humanities, Social, Management and Business Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Humanities, Social, Management and Business Sciences.",
     "registration": "€250 - €450"

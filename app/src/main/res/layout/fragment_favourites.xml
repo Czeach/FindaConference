@@ -7,7 +7,7 @@
     <data>
         <variable
             name="favourites"
-            type="com.example.findaconference.fragments.FavouritesFragment" />
+            type="com.example.findaconference.FavouritesViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

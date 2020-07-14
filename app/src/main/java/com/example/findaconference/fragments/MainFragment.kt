@@ -1,26 +1,19 @@
 package com.example.findaconference.fragments
 
 import android.graphics.Rect
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import androidx.room.Room
 import com.example.findaconference.R
 import com.example.findaconference.adapters.*
-import com.example.findaconference.database.FavouritesDatabase
 import com.example.findaconference.databinding.MainFragmentBinding
-import com.example.findaconference.models.BankingItem
-import com.example.findaconference.models.CorporateItem
-import com.example.findaconference.models.FamilyItem
-import com.example.findaconference.models.LitigationItem
+import com.example.findaconference.models.ConferenceItem
 import kotlinx.android.synthetic.main.main_fragment.*
 import org.json.JSONArray
 import org.json.JSONException
@@ -29,21 +22,17 @@ import java.io.IOException
 import java.io.InputStream
 import java.io.InputStreamReader
 import java.lang.StringBuilder
-import java.text.ParseException
-import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 
 class MainFragment : Fragment() {
 
     private lateinit var binding: MainFragmentBinding
-    private lateinit var favouritesDatabase: FavouritesDatabase
+    private val conferenceListItem: MutableList<ConferenceItem> = ArrayList()
 
     private val  bankingClickListener by lazy {
         object : bankingItemClickListener {
-            override fun invoke(it: BankingItem) {
+            override fun invoke(it: ConferenceItem) {
                 val  arg = MainFragmentDirections.actionMainFragmentToBankingDetailsFragment(it)
                 findNavController().navigate(arg)
             }
@@ -51,12 +40,11 @@ class MainFragment : Fragment() {
         }
     }
     private lateinit var bankingRecycler: RecyclerView
-    private val bankingListItem: MutableList<BankingItem> = ArrayList()
-    private val bankingAdapter = BankingAdapter(bankingListItem, bankingClickListener)
+    private val bankingAdapter = BankingAdapter(conferenceListItem, bankingClickListener)
 
     private val litigationClickListener by lazy {
         object : litigationItemClickListener {
-            override fun invoke(it: LitigationItem) {
+            override fun invoke(it: ConferenceItem) {
                 val arg = MainFragmentDirections.actionMainFragmentToDetailFragment(it)
                 findNavController().navigate(arg)
             }
@@ -64,12 +52,11 @@ class MainFragment : Fragment() {
         }
     }
     private lateinit var litigationRecycler: RecyclerView
-    private val litigationListItem: MutableList<LitigationItem> = ArrayList()
-    private val litigationAdapter = LitigationAdapter(litigationListItem, litigationClickListener)
+    private val litigationAdapter = LitigationAdapter(conferenceListItem, litigationClickListener)
 
     private val corporateClickListener by lazy {
         object : corporateItemClickListener {
-            override fun invoke(it: CorporateItem) {
+            override fun invoke(it: ConferenceItem) {
                 val arg = MainFragmentDirections.actionMainFragmentToCorporateDetailsFragment(it)
                 findNavController().navigate(arg)
             }
@@ -77,12 +64,11 @@ class MainFragment : Fragment() {
         }
     }
     private lateinit var corporateRecycler: RecyclerView
-    private val corporateListItem: MutableList<CorporateItem> = ArrayList()
-    private val corporateAdapter = CorporateAdapter(corporateListItem, corporateClickListener)
+    private val corporateAdapter = CorporateAdapter(conferenceListItem, corporateClickListener)
 
     private val familyClickListener by lazy {
         object : familyItemClickListener {
-            override fun invoke(it: FamilyItem) {
+            override fun invoke(it: ConferenceItem) {
                 val arg = MainFragmentDirections.actionMainFragmentToFamilyDetailsFragment(it)
                 findNavController().navigate(arg)
             }
@@ -90,8 +76,7 @@ class MainFragment : Fragment() {
         }
     }
     private lateinit var familyRecycler: RecyclerView
-    private val familyListItem: MutableList<FamilyItem> = ArrayList()
-    private val familyAdapter = FamilyAdapter(familyListItem, familyClickListener)
+    private val familyAdapter = FamilyAdapter(conferenceListItem, familyClickListener)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -208,11 +193,12 @@ class MainFragment : Fragment() {
                 val date = bankingItem.getString("date")
                 val desc = bankingItem.getString("description")
                 val img = bankingItem.getString("image")
+                val isFav = bankingItem.getBoolean("isFavourite")
                 val name = bankingItem.getString("name")
                 val reg = bankingItem.getString("registration")
                 val venue = bankingItem.getString("venue")
-                val banking = BankingItem(confCode, date, desc, img, name, reg, venue)
-                bankingListItem.add(banking)
+                val banking = ConferenceItem(confCode, date, desc, img, isFav, name, reg, venue)
+                conferenceListItem.add(banking)
             }
         } catch (exception: IOException) {
         Log.d("MainFragment", "Unable to parse JSON file.", exception)
@@ -250,11 +236,12 @@ class MainFragment : Fragment() {
                 val date = litigationItem.getString("date")
                 val desc = litigationItem.getString("description")
                 val img = litigationItem.getString("image")
+                val isFav = litigationItem.getBoolean("isFavourite")
                 val name = litigationItem.getString("name")
                 val reg = litigationItem.getString("registration")
                 val venue = litigationItem.getString("venue")
-                val litigation = LitigationItem(confCode, date, desc, img, name, reg, venue)
-                litigationListItem.add(litigation)
+                val litigation = ConferenceItem(confCode, date, desc, img, isFav, name, reg, venue)
+                conferenceListItem.add(litigation)
             }
         } catch (exception: IOException) {
             Log.d("MainFragment", "Unable to parse JSON file.", exception)
@@ -292,11 +279,12 @@ class MainFragment : Fragment() {
                 val date = corporateItem.getString("date")
                 val desc = corporateItem.getString("description")
                 val img = corporateItem.getString("image")
+                val isFav = corporateItem.getBoolean("isFavourite")
                 val name = corporateItem.getString("name")
                 val reg = corporateItem.getString("registration")
                 val venue = corporateItem.getString("venue")
-                val corporate = CorporateItem(confCode, date, desc, img, name, reg, venue)
-                corporateListItem.add(corporate)
+                val corporate = ConferenceItem(confCode, date, desc, img, isFav, name, reg, venue)
+                conferenceListItem.add(corporate)
             }
         } catch (exception: IOException) {
             Log.d("MainFragment", "Unable to parse JSON file.", exception)
@@ -334,11 +322,12 @@ class MainFragment : Fragment() {
                 val date = familyItem.getString("date")
                 val desc = familyItem.getString("description")
                 val img = familyItem.getString("image")
+                val isFav = familyItem.getBoolean("isFavourite")
                 val name = familyItem.getString("name")
                 val reg = familyItem.getString("registration")
                 val venue = familyItem.getString("venue")
-                val family = FamilyItem(confCode, date, desc, img, name, reg, venue)
-                familyListItem.add(family)
+                val family = ConferenceItem(confCode, date, desc, img, isFav, name, reg, venue)
+                conferenceListItem.add(family)
             }
         } catch (exception: IOException) {
             Log.d("MainFragment", "Unable to parse JSON file.", exception)

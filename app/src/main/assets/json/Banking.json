@@ -4,6 +4,7 @@
     "venue": "Tokyo, Japan",
     "date": "July 14-15, 2020",
     "image" : "images/tokyo.jpg",
+    "isFavourite": false,
     "conference_code": "20JP07ICFBI",
     "description": "International Conference on Finance, Banking and Insurance aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Finance, Banking and Insurance. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Finance, Banking and Insurance.",
     "registration": "€300 - €500"
@@ -13,6 +14,7 @@
     "venue": "Stockholm, Sweden",
     "date": "July 16-17, 2020",
     "image" : "images/stockholm.jpg",
+    "isFavourite": false,
     "conference_code": "20SE07ICABEM",
     "description": "International Conference on Advances in Business, Economics and Management aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Advances in Business, Economics and Management. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Advances in Business, Economics and Management.",
     "registration": "€300 - €500"
@@ -22,6 +24,7 @@
     "venue": "Bali, Indonesia",
     "date": "July 16-17, 2020",
     "image" : "images/bali.jpg",
+    "isFavourite": false,
     "conference_code": "20ID07ICASB",
     "description": "International Conference on Administrative Sciences and Business aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Administrative Sciences and Business. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Administrative Sciences and Business.",
     "registration": "€300 - €500"
@@ -31,6 +34,7 @@
     "venue": "Helsinki, Finland",
     "date": "July 17-18, 2020",
     "image" : "images/helsinki.jpg",
+    "isFavourite": false,
     "conference_code": "20FI07ICBBS",
     "description": "International Conference on Business and Behavioral Sciences aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Business and Behavioral Sciences. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Business and Behavioral Sciences.",
     "registration": "€300 - €500"
@@ -40,6 +44,7 @@
     "venue": "Paris, France",
     "date": "July 20-21, 2020",
     "image" : "images/paris.jpg",
+    "isFavourite": false,
     "conference_code": "20FR07ICAF",
     "description": "International Conference on Accounting and Finance aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Accounting and Finance. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Accounting and Finance.",
     "registration": "€300 - €500"
@@ -49,6 +54,7 @@
     "venue": "Rome, Italy",
     "date": "July 23-24, 2020",
     "image" : "images/rome.jpg",
+    "isFavourite": false,
     "conference_code": "20IT07ICEBMH",
     "description": "International Conference on Economics, Business, Management and Humanities aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Economics, Business, Management and Humanities. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Economics, Business, Management and Humanities.",
     "registration": "€300 - €500"
@@ -58,6 +64,7 @@
     "venue": "London, United Kingdom",
     "date": "July 23-24, 2020",
     "image" : "images/london.jpg",
+    "isFavourite": false,
     "conference_code": "20UK07ICESD",
     "description": "International Conference on Economic and Sustainable Development aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Economic and Sustainable Development. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Economic and Sustainable Development.",
     "registration": "€300 - €500"
@@ -67,6 +74,7 @@
     "venue": "Zurich, Switzerland",
     "date": "July 27-28, 2020",
     "image": "images/zurich.jpg",
+    "isFavourite": false,
     "conference_code": "20CH07ICEBFC",
     "description": "International Conference on Economic, Business and Financial Challenges aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Economic, Business and Financial Challenges. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Economic, Business and Financial Challenges.",
     "registration": "€300 - €500"
@@ -76,6 +84,7 @@
     "venue": "Istanbul, Turkey",
     "date": "July 30-31, 2020",
     "image": "images/istanbul.jpg",
+    "isFavourite": false,
     "conference_code": "20TR07ICBBF",
     "description": "International Conference on Business, Banking and Finance aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Business, Banking and Finance. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Business, Banking and Finance.",
     "registration": "€300 - €400"
@@ -85,6 +94,7 @@
     "venue": "Montreal, Canada",
     "date": "August 04-05, 2020",
     "image": "images/montreal.jpg",
+    "isFavourite": false,
     "conference_code": "20CA08ICBFTM",
     "description": "International Conference on Business, Finance and Tourism Management aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Business, Finance and Tourism Management. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Business, Finance and Tourism Management.",
     "registration": "€300 - €500"

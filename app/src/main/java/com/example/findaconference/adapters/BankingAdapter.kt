@@ -8,13 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findaconference.R
-import com.example.findaconference.models.BankingItem
+import com.example.findaconference.models.ConferenceItem
 import kotlinx.android.synthetic.main.litigation_list_item.view.*
 import kotlin.random.Random
 
-typealias bankingItemClickListener = (BankingItem) -> Unit
+typealias bankingItemClickListener = (ConferenceItem) -> Unit
 
-class BankingAdapter(private var list: List<BankingItem>, private val clickListener: bankingItemClickListener):
+class BankingAdapter(private var list: List<ConferenceItem>, private val clickListener: bankingItemClickListener):
     RecyclerView.Adapter<BankingAdapter.BankingViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BankingViewHolder {
@@ -44,14 +44,14 @@ class BankingAdapter(private var list: List<BankingItem>, private val clickListe
             itemView.setOnClickListener(this)
         }
 
-        fun bind(bankingItem: BankingItem) {
+        fun bind(conferenceItem: ConferenceItem) {
 
-            title?.text = bankingItem.name
-            venue?.text = bankingItem.venue
-            regFee?.text = bankingItem.registration
+            title?.text = conferenceItem.name
+            venue?.text = conferenceItem.venue
+            regFee?.text = conferenceItem.registration
 
             poster?.layoutParams?.height = getRandomIntInRange()
-            val getImage = itemView.context.assets.open(bankingItem.image)
+            val getImage = itemView.context.assets.open(conferenceItem.image)
             poster?.setImageDrawable(Drawable.createFromStream(getImage, null))
         }
 

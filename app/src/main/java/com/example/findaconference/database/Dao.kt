@@ -16,6 +16,6 @@ interface FavouritesDao {
     @Query("SELECT EXISTS (SELECT 1 FROM favouritesList WHERE id = :id)")
     fun isFavorite(id: Int): Int
 
-    @Delete
-    fun delete(favourites: Favourites)
+    @Query("DELETE FROM favouritesList")
+    fun delete()
 }
